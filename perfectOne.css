@@ -33,6 +33,20 @@ section:first-of-type.s-block.s-block--photos-slider {
 }
 
 /* categoryyy//////////////// */ 
+.lazy__bg.lazy.entered.loaded {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.s-block--features__item a.banner-entry.square-photos.has-overlay.with-hover {
+    width: auto !important;
+    height: unset !important;
+    background: transparent !important;
+}
+.grid.grid-cols-\[repeat\(2\,minmax\(0\,1fr\)\)\].md\:grid-cols-\[repeat\(3\,minmax\(0\,1fr\)\)\].gap-4.sm\:gap-6.xl\:gap-8 {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
 /* Add custom CSS styles below */ 
 .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 {
     display: flex;
@@ -56,6 +70,9 @@ section:first-of-type.s-block.s-block--photos-slider {
     
 /* Media Query for Mobile Devices */ 
  @media (max-width: 480px) { 
+         .s-block--features__item {
+    width: 45%;
+}    
            .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 a.banner-entry.square-photos {
     width: 48%;
      height: 130px !important;
@@ -65,9 +82,14 @@ section:first-of-type.s-block.s-block--photos-slider {
 /* Media Query for low resolution  Tablets, Ipads */ 
        
 @media (min-width: 481px) and (max-width: 767px) { 
+     .s-block--features__item {
+    width: 46%;
+}
  .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 a.banner-entry.square-photos{
     width: 31%;
     height: 177px !important;
     background: #f9fafb00;
     }
  }
+
+/* Add custom CSS styles below */ 
